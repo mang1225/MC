@@ -142,6 +142,9 @@ public class DeviceAdminFragment extends PreferenceFragment implements Preferenc
 
       case "disabled_wifi":
         phoneSettingsManager.toggleWifi(getActivity());
+//        WifiOpenHelper helper = new WifiOpenHelper(getActivity().getApplicationContext());
+//        helper.creatWifiLock("tag");
+//        helper.releaseWifiLock();
         break;
 
       case "bluetooth_status":

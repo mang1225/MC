@@ -19,5 +19,7 @@
     <!--<disable-keyguard-features />-->
     <!-- 禁用摄像头 -->
     <disable-camera />
+    <allow-wifi />
+    <allow-bluetoothmode />
   </uses-policies>
 </device-admin>
