@@ -123,7 +123,7 @@ public class WaterCamera2Activity extends CheckPermissionsActivity {
     @Override
     public void onPictureTaken(byte[] data, Camera camera) {
       String photoName = System.currentTimeMillis() + ".jpg";
-      String   getWaterPhotoPath = getExternalCacheDir() + File.separator + "QQ";
+      String getWaterPhotoPath = getExternalCacheDir() + File.separator + "QQ";
       File cache = new File(getWaterPhotoPath);
       if (!cache.exists()) {
         cache.mkdir();
