@@ -147,16 +147,13 @@ public class WaterCamera2Activity extends CheckPermissionsActivity {
   private class MySurfaceViewCallback implements Callback {
 
     @Override
-    public void surfaceChanged(SurfaceHolder holder, int format, int width,
-        int height) {
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
       parameters = camera.getParameters();//设置相机参数
       parameters.setPictureFormat(PixelFormat.JPEG);
       parameters.setPreviewSize(width, height);//预览大小
       parameters.setPreviewFrameRate(5);//帧
       parameters.setPictureSize(width, height);//保存图片大小
       parameters.setJpegQuality(80);//图片质量
-
-
     }
 
     @Override
@@ -169,7 +166,6 @@ public class WaterCamera2Activity extends CheckPermissionsActivity {
       } catch (IOException e) {
         e.printStackTrace();
       }
-
     }
 
     @Override
